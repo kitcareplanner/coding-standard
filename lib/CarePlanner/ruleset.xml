@@ -3,6 +3,25 @@
     <description>The CarePlanner coding standard.</description>
 
     <rule ref="Doctrine">
+        <!-- Aligning assignment statements can cause messy diffs (and is harder to read) -->
+        <exclude name="Generic.Formatting.MultipleStatementAlignment"/>
+        <!-- Disable forcing whitespace after `!` -->
+        <exclude name="Generic.Formatting.SpaceAfterNot"/>
+        <!-- Exclude phpDoc alignment ugliness (more messy diffs) -->
+        <exclude name="Squiz.Commenting.DocCommentAlignment"/>
+        <!-- Disable forcing aligning array values (messy diffs) -->
+        <exclude name="Squiz.Arrays.ArrayDeclaration.DoubleArrowNotAligned"/>
+        <!-- Disable param alignment (messy diffs) -->
+        <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamType"/>
+    </rule>
+
+    <!-- Require early exit but not if last position in scope -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit">
+        <properties>
+            <property name="ignoreStandaloneIfInScope" value="true" />
+            <property name="ignoreOneLineTrailingIf" value="true" />
+            <property name="ignoreTrailingIfWithOneInstruction" value="true" />
+        </properties>
     </rule>
 
     <!-- Require arrays to be created before values can be assigned -->
@@ -110,10 +129,8 @@
     </rule>
     <!-- Require a trailing comma in calls for cleaner diffs -->
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall" />
-    <!-- Require a trailing comma in declrations for cleaner diffs -->
+    <!-- Require a trailing comma in declarations for cleaner diffs -->
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration" />
-    <!-- Require the use of $strict = true for functions with the parameter -->
-    <rule ref="SlevomatCodingStandard.Functions.StrictCall" />
     <!-- Forbid functions that are too long -->
     <rule ref="SlevomatCodingStandard.Functions.FunctionLength">
         <properties>
@@ -143,4 +160,48 @@
     </rule>
     <!-- Forbid unused variables -->
     <rule ref="SlevomatCodingStandard.Variables.UnusedVariable" />
+
+
+    <!-- Severity 4 - minor code changes -->
+    <!-- Forbid assigning variables within a condition -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition">
+        <severity>4</severity>
+    </rule>
+    <!-- Require the use of $strict = true for functions with the parameter -->
+    <rule ref="SlevomatCodingStandard.Functions.StrictCall">
+        <severity>4</severity>
+    </rule>
+
+    <!-- Severity 3 - minor code refactors -->
+    <!-- Forbid "Abstract" in name of abstract class -->
+    <rule ref="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNaming">
+        <severity>3</severity>
+    </rule>
+    <!-- Forbid "Exception" in name of exception class -->
+    <rule ref="SlevomatCodingStandard.Classes.SuperfluousExceptionNaming">
+        <severity>3</severity>
+    </rule>
+    <!-- Forbid "Interface" in name of interface -->
+    <rule ref="SlevomatCodingStandard.Classes.SuperfluousInterfaceNaming">
+        <severity>3</severity>
+    </rule>
+    <!-- Forbid "Trait" in name of trait -->
+    <rule ref="SlevomatCodingStandard.Classes.SuperfluousTraitNaming">
+        <severity>3</severity>
+    </rule>
+
+    <!-- Severity 2 - major code refactors -->
+
+    <!-- Severity 1 - case by case basis -->
+    <!-- Forbid parameters that have no uses -->
+    <rule ref="SlevomatCodingStandard.Functions.UnusedParameter">
+        <severity>1</severity>
+    </rule>
+    <!-- Forbid functions longer than 40 lines -->
+    <rule ref="SlevomatCodingStandard.Functions.FunctionLength">
+        <properties>
+            <property name="maxLinesLength" value="40" />
+        </properties>
+        <severity>1</severity>
+    </rule>
 </ruleset>
