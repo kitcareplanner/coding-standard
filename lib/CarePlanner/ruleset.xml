@@ -119,8 +119,48 @@
     <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding">
         <severity>4</severity>
     </rule>
+    <!-- Require that single line arrays have the correct spacing: no space around brackets and one space after comma -->
+    <rule ref="SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace">
+        <severity>4</severity>
+    </rule>
+    <!-- Disallow empty lines -->
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines">
+        <severity>4</severity>
+    </rule>
+    <!-- Force rules for function phpDoc -->
+    <rule ref="Squiz.Commenting.FunctionComment">
+        <severity>4</severity>
+    </rule>
+    <!-- Forbid spacing before the negative operator `-` -->
+    <rule ref="SlevomatCodingStandard.Operators.NegationOperatorSpacing">
+        <severity>4</severity>
+    </rule>
+    <!-- Forbid useless inherit doc comment -->
+    <rule ref="SlevomatCodingStandard.Commenting.UselessInheritDocComment">
+        <severity>4</severity>
+    </rule>
+    <!-- Require space after language constructs -->
+    <rule ref="Squiz.WhiteSpace.LanguageConstructSpacing">
+        <severity>4</severity>
+    </rule>
+    <!-- Forbid spaces around square brackets -->
+    <rule ref="Squiz.Arrays.ArrayBracketSpacing">
+        <severity>4</severity>
+    </rule>
+    <!-- Forbid comments starting with # -->
+    <rule ref="PEAR.Commenting.InlineComment">
+        <severity>4</severity>
+    </rule>
+    <!-- Require the `null` type hint to be in the last position of annotations -->
+    <rule ref="SlevomatCodingStandard.TypeHints.NullTypeHintOnLastPosition">
+        <severity>4</severity>
+    </rule>
+    <!-- Forbid empty comments -->
+    <rule ref="SlevomatCodingStandard.Commenting.EmptyComment">
+        <severity>4</severity>
+    </rule>
 
-    <!-- Severity 3 - styling issues -->
+    <!-- Severity 3 - minor styling issues with a potential functional impact -->
     <!-- Forbid fancy yoda conditions -->
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison">
         <severity>3</severity>
@@ -170,8 +210,6 @@
         </properties>
         <severity>3</severity>
     </rule>
-
-    <!-- Severity 3 - minor functional issues -->
     <!-- Forbid using absolute class name references (except global ones) -->
     <rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly">
         <severity>3</severity>
@@ -235,6 +273,54 @@
     </rule>
     <!-- Forbid omitting parentheses for empty constructor call -->
     <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses">
+        <severity>3</severity>
+    </rule>
+    <!-- Require use of short versions of scalar types (i.e. int instead of integer) -->
+    <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints">
+        <severity>3</severity>
+    </rule>
+    <!-- Require usage of null coalesce operator equal operator when possible -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator">
+        <severity>3</severity>
+    </rule>
+    <!-- Require usage of null coalesce operator when possible -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator">
+        <severity>3</severity>
+    </rule>
+    <!-- Forbid usage of conditions when a simple return can be used -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn">
+        <severity>3</severity>
+    </rule>
+    <!-- Forbid useless uses of the same namespace -->
+    <rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace">
+        <severity>3</severity>
+    </rule>
+    <!-- Forbid `array(...)` -->
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax">
+        <severity>3</severity>
+    </rule>
+    <!-- Forbid useless parentheses -->
+    <rule ref="SlevomatCodingStandard.PHP.UselessParentheses">
+        <severity>3</severity>
+    </rule>
+    <!-- Require the usage of assignment operators, eg `+=`, `.=` when possible -->
+    <rule ref="SlevomatCodingStandard.Operators.RequireCombinedAssignmentOperator">
+        <severity>3</severity>
+    </rule>
+    <!-- Forbid empty statements -->
+    <rule ref="Generic.CodeAnalysis.EmptyStatement">
+        <severity>3</severity>
+    </rule>
+    <!-- Forbid useless inline string concatenation -->
+    <rule ref="Generic.Strings.UnnecessaryStringConcat">
+        <severity>3</severity>
+    </rule>
+    <!-- Force `self::` for self-reference, force lower-case self, forbid spaces around `::` -->
+    <rule ref="Squiz.Classes.SelfMemberReference">
+        <severity>3</severity>
+    </rule>
+    <!-- Forbid useless variables -->
+    <rule ref="SlevomatCodingStandard.Variables.UselessVariable">
         <severity>3</severity>
     </rule>
 
@@ -308,6 +394,10 @@
     </rule>
     <!-- Forbid useless parameter defaults -->
     <rule ref="SlevomatCodingStandard.Functions.UselessParameterDefaultValue">
+        <severity>2</severity>
+    </rule>
+    <!-- Forbid dead code -->
+    <rule ref="Squiz.PHP.NonExecutableCode">
         <severity>2</severity>
     </rule>
 
