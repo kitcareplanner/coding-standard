@@ -15,45 +15,45 @@
         <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamType"/>
     </rule>
 
-    <!-- Severity 9 - minor styling issues, fixable -->
+    <!-- Severity 4 - minor styling issues -->
     <!-- Require consistent spacing for block structures -->
     <rule ref="SlevomatCodingStandard.ControlStructures.BlockControlStructureSpacing">
-        <severity>9</severity>
+        <severity>4</severity>
     </rule>
     <!-- Require consistent spacing for jump statements -->
     <rule ref="SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing">
-        <severity>9</severity>
+        <severity>4</severity>
     </rule>
     <!-- Require specific order of phpDoc annotations with empty newline between specific groups -->
     <rule ref="SlevomatCodingStandard.Commenting.DocCommentSpacing">
-        <severity>9</severity>
+        <severity>4</severity>
     </rule>
     <!-- Require 1 line before and after function, except at the top and bottom -->
     <rule ref="Squiz.WhiteSpace.FunctionSpacing">
-        <severity>9</severity>
+        <severity>4</severity>
     </rule>
     <!-- Force whitespace after a type cast -->
     <rule ref="Generic.Formatting.SpaceAfterCast">
-        <severity>9</severity>
+        <severity>4</severity>
     </rule>
     <!-- Forbid spaces before semicolon `;` -->
     <rule ref="Squiz.WhiteSpace.SemicolonSpacing">
-        <severity>9</severity>
+        <severity>4</severity>
     </rule>
     <!-- Forbid blank line after function opening brace -->
     <rule ref="Squiz.WhiteSpace.FunctionOpeningBraceSpace">
-        <severity>9</severity>
+        <severity>4</severity>
     </rule>
     <!-- Ensure Arrow Functions declaration format -->
     <rule ref="SlevomatCodingStandard.Functions.ArrowFunctionDeclaration">
-        <severity>9</severity>
+        <severity>4</severity>
     </rule>
     <!-- Require an empty line between class members -->
     <rule ref="SlevomatCodingStandard.Classes.ClassMemberSpacing">
         <properties>
             <property name="lineCountBetweenMembers" value="1" />
         </properties>
-        <severity>9</severity>
+        <severity>4</severity>
     </rule>
     <!-- Require a certain number of blank lines between constants -->
     <rule ref="SlevomatCodingStandard.Classes.ConstantSpacing">
@@ -63,7 +63,7 @@
             <property name="minLinesCountBeforeWithoutComment" value="0" />
             <property name="maxLinesCountBeforeWithoutComment" value="1" />
         </properties>
-        <severity>9</severity>
+        <severity>4</severity>
     </rule>
     <!-- Require exactly 1 line between methods -->
     <rule ref="SlevomatCodingStandard.Classes.MethodSpacing">
@@ -71,7 +71,7 @@
             <property name="minLinesCount" value="1" />
             <property name="maxLinesCount" value="1" />
         </properties>
-        <severity>9</severity>
+        <severity>4</severity>
     </rule>
     <!-- Require a certain number of blank lines between properties -->
     <rule ref="SlevomatCodingStandard.Classes.PropertySpacing">
@@ -81,11 +81,11 @@
             <property name="minLinesCountBeforeWithoutComment" value="0" />
             <property name="maxLinesCountBeforeWithoutComment" value="1" />
         </properties>
-        <severity>9</severity>
+        <severity>4</severity>
     </rule>
     <!-- Force proper formatting on namespace declaration -->
     <rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration">
-        <severity>9</severity>
+        <severity>4</severity>
     </rule>
     <!-- Check the format of union type hints -->
     <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat">
@@ -93,43 +93,41 @@
             <property name="withSpaces" value="no" />
             <property name="nullPosition" value="last" />
         </properties>
-        <severity>9</severity>
+        <severity>4</severity>
     </rule>
-
-    <!-- Severity 8 - redundant code, fixable -->
     <!-- Forbid useless phpDocs for functions -->
     <rule ref="SlevomatCodingStandard.Commenting.UselessFunctionDocComment">
-        <severity>8</severity>
+        <severity>4</severity>
     </rule>
     <!-- Forbid useless @var for constants -->
     <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint">
-        <severity>8</severity>
+        <severity>4</severity>
     </rule>
     <!-- Forbid useless annotations - Git and LICENCE file provide more accurate information -->
     <rule ref="SlevomatCodingStandard.Commenting.ForbiddenAnnotations">
-        <severity>8</severity>
+        <severity>4</severity>
     </rule>
     <!-- Forbid useless comments -->
     <rule ref="SlevomatCodingStandard.Commenting.ForbiddenComments">
-        <severity>8</severity>
+        <severity>4</severity>
     </rule>
     <!-- Require comments with single line written as one-liners -->
     <rule ref="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment">
-        <severity>8</severity>
+        <severity>4</severity>
     </rule>
     <!-- Forbid useless late static binding -->
     <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding">
-        <severity>8</severity>
+        <severity>4</severity>
     </rule>
 
-    <!-- Severity 7 - fixable styling issues -->
+    <!-- Severity 3 - styling issues -->
     <!-- Forbid fancy yoda conditions -->
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison">
-        <severity>7</severity>
+        <severity>3</severity>
     </rule>
     <!-- Require a trailing comma in declarations for cleaner diffs -->
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration">
-        <severity>7</severity>
+        <severity>3</severity>
     </rule>
 
     <!-- Force a method signature to be 1 line if it can fit -->
@@ -137,22 +135,22 @@
         <properties>
             <property name="maxLineLength" value="120" />
         </properties>
-        <severity>7</severity>
+        <severity>3</severity>
     </rule>
     <!-- Require a function call to be on a single line if it can fit -->
     <rule ref="SlevomatCodingStandard.Functions.RequireSingleLineCall">
         <properties>
             <property name="maxLineLength" value="120" />
         </properties>
-        <severity>7</severity>
+        <severity>3</severity>
     </rule>
     <!-- Force array declaration structure -->
     <rule ref="Squiz.Arrays.ArrayDeclaration">
-        <severity>7</severity>
+        <severity>3</severity>
     </rule>
     <!-- Force array element indentation with 4 spaces -->
     <rule ref="Generic.Arrays.ArrayIndent">
-        <severity>7</severity>
+        <severity>3</severity>
     </rule>
     <!-- Require class members to be in the defined order -->
     <rule ref="SlevomatCodingStandard.Classes.ClassStructure">
@@ -170,25 +168,25 @@
                 <element value="methods"/>
             </property>
         </properties>
-        <severity>7</severity>
+        <severity>3</severity>
     </rule>
 
-    <!-- Severity 6 - fixable functional issues -->
+    <!-- Severity 3 - minor functional issues -->
     <!-- Forbid using absolute class name references (except global ones) -->
     <rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly">
-        <severity>6</severity>
+        <severity>3</severity>
     </rule>
     <!-- Require /* @var type $foo */ and similar simple inline annotations to be replaced by assert() -->
     <rule ref="SlevomatCodingStandard.PHP.RequireExplicitAssertion">
-        <severity>6</severity>
+        <severity>3</severity>
     </rule>
     <!-- Require closures not referencing $this be static -->
     <rule ref="SlevomatCodingStandard.Functions.StaticClosure">
-        <severity>6</severity>
+        <severity>3</severity>
     </rule>
     <!-- Forbid strings in `"` unless necessary -->
     <rule ref="Squiz.Strings.DoubleQuoteUsage">
-        <severity>6</severity>
+        <severity>3</severity>
     </rule>
     <!-- Require early exit but not if last position in scope -->
     <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit">
@@ -197,161 +195,154 @@
             <property name="ignoreOneLineTrailingIf" value="true" />
             <property name="ignoreTrailingIfWithOneInstruction" value="true" />
         </properties>
-        <severity>6</severity>
+        <severity>3</severity>
     </rule>
     <!-- Require usage of ::class instead of __CLASS__, get_class(), get_class($this), get_called_class() and get_parent_class() -->
     <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference">
-        <severity>6</severity>
+        <severity>3</severity>
     </rule>
     <!-- Forbid `list(...)` syntax -->
     <rule ref="SlevomatCodingStandard.PHP.ShortList">
-        <severity>6</severity>
+        <severity>3</severity>
     </rule>
     <!-- Require the use of arrow functions where possible -->
     <rule ref="SlevomatCodingStandard.Functions.RequireArrowFunction">
-        <severity>6</severity>
+        <severity>3</severity>
     </rule>
     <!-- Forbid capturing in a catch where the variable is not used -->
     <rule ref="SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch">
-        <severity>6</severity>
+        <severity>3</severity>
     </rule>
     <!-- Require using Throwable instead of Exception -->
     <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly">
-        <severity>6</severity>
+        <severity>3</severity>
     </rule>
     <!-- Require language constructs without parentheses -->
     <rule ref="SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses">
-        <severity>6</severity>
+        <severity>3</severity>
     </rule>
     <!-- Forbid LSB for constants (static::FOO) -->
     <rule ref="SlevomatCodingStandard.Classes.DisallowLateStaticBindingForConstants">
-        <severity>6</severity>
+        <severity>3</severity>
     </rule>
     <!-- Forbid @deprecated without a description -->
     <rule ref="SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration">
-        <severity>6</severity>
+        <severity>3</severity>
     </rule>
     <!-- Forbid continue without integer operand because it emits a warning -->
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch">
-        <severity>6</severity>
+        <severity>3</severity>
     </rule>
     <!-- Forbid omitting parentheses for empty constructor call -->
     <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses">
-        <severity>6</severity>
+        <severity>3</severity>
     </rule>
 
-    <!-- Severity 5 - minor code changes -->
+    <!-- Severity 2 - minor code changes -->
     <!-- Require usage of sprintf() or concatenation -->
     <rule ref="Squiz.Strings.DoubleQuoteUsage.ContainsVar">
-        <severity>5</severity>
+        <severity>2</severity>
     </rule>
     <!-- Require types to be written as natively if possible -->
     <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint">
-        <severity>5</severity>
+        <severity>2</severity>
     </rule>
     <!-- Require types to be written as natively if possible -->
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint">
-        <severity>5</severity>
+        <severity>2</severity>
     </rule>
     <!-- Forbid alias functions, i.e. `sizeof()`, `delete()` -->
     <rule ref="Generic.PHP.ForbiddenFunctions">
-        <severity>5</severity>
+        <severity>2</severity>
     </rule>
     <!-- Force rules for function phpDoc -->
     <rule ref="Squiz.Commenting.FunctionComment.MissingParamName">
-        <severity>5</severity>
+        <severity>2</severity>
     </rule>
     <!-- Require types to be written as natively if possible -->
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint">
-        <severity>5</severity>
+        <severity>2</severity>
     </rule>
     <!-- Report invalid format of inline phpDocs with @var -->
     <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration">
         <properties>
             <property name="allowDocCommentAboveReturn" value="true" />
         </properties>
-        <severity>5</severity>
+        <severity>2</severity>
     </rule>
     <!-- Forbid unused variables -->
     <rule ref="SlevomatCodingStandard.Variables.UnusedVariable">
-        <severity>5</severity>
+        <severity>2</severity>
     </rule>
-
-
-    <!-- Severity 4 - minor code changes -->
     <!-- Forbid assigning variables within a condition -->
     <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition">
-        <severity>4</severity>
+        <severity>2</severity>
     </rule>
     <!-- Require the use of $strict = true for functions with the parameter -->
     <rule ref="SlevomatCodingStandard.Functions.StrictCall">
-        <severity>4</severity>
+        <severity>2</severity>
     </rule>
     <!-- Force camelCase variables -->
     <rule ref="Squiz.NamingConventions.ValidVariableName">
-        <severity>4</severity>
+        <severity>2</severity>
     </rule>
     <!-- Require separators in large numbers -->
     <rule ref="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator">
-        <severity>4</severity>
+        <severity>2</severity>
     </rule>
     <!-- Require increment and decrement operators to be standalone -->
     <rule ref="SlevomatCodingStandard.Operators.RequireOnlyStandaloneIncrementAndDecrementOperators">
-        <severity>4</severity>
+        <severity>2</severity>
     </rule>
     <!-- Require ?: where possible -->
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireShortTernaryOperator">
-        <severity>4</severity>
+        <severity>2</severity>
     </rule>
     <!-- Require ternary where possible -->
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireTernaryOperator">
-        <severity>4</severity>
+        <severity>2</severity>
     </rule>
     <!-- Require empty functions to have a comment -->
     <rule ref="SlevomatCodingStandard.Functions.DisallowEmptyFunction">
-        <severity>4</severity>
+        <severity>2</severity>
     </rule>
     <!-- Forbid useless parameter defaults -->
     <rule ref="SlevomatCodingStandard.Functions.UselessParameterDefaultValue">
-        <severity>4</severity>
+        <severity>2</severity>
     </rule>
 
-    <!-- Severity 3 - minor code refactors -->
+    <!-- Severity 1 - major code refactors -->
     <!-- Forbid "Abstract" in name of abstract class -->
     <rule ref="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNaming">
-        <severity>3</severity>
+        <severity>1</severity>
     </rule>
     <!-- Forbid "Exception" in name of exception class -->
     <rule ref="SlevomatCodingStandard.Classes.SuperfluousExceptionNaming">
-        <severity>3</severity>
+        <severity>1</severity>
     </rule>
     <!-- Forbid "Interface" in name of interface -->
     <rule ref="SlevomatCodingStandard.Classes.SuperfluousInterfaceNaming">
-        <severity>3</severity>
+        <severity>1</severity>
     </rule>
     <!-- Forbid "Trait" in name of trait -->
     <rule ref="SlevomatCodingStandard.Classes.SuperfluousTraitNaming">
-        <severity>3</severity>
+        <severity>1</severity>
     </rule>
     <!-- Require arrays to be created before values can be assigned -->
     <rule ref="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation">
-        <severity>3</severity>
+        <severity>1</severity>
     </rule>
-
-    <!-- Severity 2 - major code refactors -->
     <!-- Forbid references -->
     <rule ref="SlevomatCodingStandard.PHP.DisallowReference">
-        <severity>2</severity>
+        <severity>1</severity>
     </rule>
     <rule ref="Generic.CodeAnalysis.UselessOverridingMethod">
-        <severity>2</severity>
+        <severity>1</severity>
     </rule>
     <!-- Forbid multiple namespaces in a file -->
     <rule ref="SlevomatCodingStandard.Namespaces.RequireOneNamespaceInFile">
-        <severity>2</severity>
+        <severity>1</severity>
     </rule>
-
-    <!-- Severity 1 - case by case basis -->
     <!-- Forbid parameters that have no uses -->
     <rule ref="SlevomatCodingStandard.Functions.UnusedParameter">
         <severity>1</severity>
