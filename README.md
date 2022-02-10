@@ -5,6 +5,48 @@ The CarePlanner Coding Standard is a set of [PHP_CodeSniffer](https://github.com
 Code MUST follow all rules outlined in [PSR-12](https://www.php-fig.org/psr/psr-12/).
 
 ## Differences to Doctrine Coding Standard
+### Additions
+#### Severity 4
+- Exactly 1 empty line must be between class members. (SlevomatCodingStandard.Classes.ClassMemberSpacing)
+- Exactly 1 empty line before a constant with a comment, and up to 1 empty line between constants without a comment. (SlevomatCodingStandard.Classes.ConstantSpacing)
+- Exactly 1 empty line between methods. (SlevomatCodingStandard.Classes.MethodSpacing)
+- Exactly 1 empty line before a property with a comment, and up to 1 empty line between properties without a comment. (SlevomatCodingStandard.Classes.PropertySpacing)
+- Union type hints must not contain spaces between types, and `null` must be in the last position. (SlevomatCodingStandard.TypeHints.UnionTypeHintFormat)
+#### Severity 3
+- A trailing comma in function declarations is required. (SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration)
+- A method signature must be a one-liner where possible. (SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature)
+- A function call must be a one-liner where possible. (SlevomatCodingStandard.Classes.RequireSingleLineCall)
+- Class members must be present in the following order: (SlevomatCodingStandard.Classes.ClassStructure)
+  - uses
+  - public constants
+  - constants
+  - public static properties
+  - static properties
+  - public properties
+  - properties
+  - constructor
+  - magic methods
+  - methods
+- Arrow functions must be used where possible. (SlevomatCodingStandard.Functions.RequireArrowFunction)
+- Non-capturing catch statements must be used when applicable. (SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch)
+- `@deprecated` annotations must have a description. (SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration)
+- `continue` in switch without integer operand is not allowed. (SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch)
+- When creating objects with `new`, there must be parentheses after the class name. (SlevomatCodingStandard.ControlStructures.NewWithParentheses)
+#### Severity 2
+- Unused variables are not allowed. (SlevomatCodingStandard.Variables.UnusedVariable)
+- Using `$strict = true` is required for PHP functions that have such a parameter. (SlevomatCodingStandard.Functions.StrictCall)
+- Numeric literal separators are required in large numbers. (SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator)
+- Increment and decrement operators must be standalone. (SlevomatCodingStandard.Operators.RequireOnlyStandaloneIncrementAndDecrementOperators)
+- Short ternary operator (`?:`) must be used where possible. (SlevomatCodingStandard.ControlStructures.RequireShortTernaryOperator)
+- Ternary operator must be used where possible. (SlevomatCodingStandard.ControlStructures.RequireTernaryOperator)
+- Functions with no statements must contain a comment. (SlevomatCodingStandard.Functions.DisallowEmptyFunction)
+- Useless parameter default values are not allowed. (SlevomatCodingStandard.Functions.UselessParameterDefaultValue)
+#### Severity 1
+- Implicit array creation is not allowed. (SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation)
+- References are not allowed. (SlevomatCodingStandard.PHP.DisallowReference)
+- Multiple namespaces in a single file are not allowed. (SlevomatCodingStandard.Namespaces.RequireOneNamespaceInFile)
+- Parameters with no uses are not allowed. (SlevomatCodingStandard.Functions.UnusedParameter)
+- Functions may not be longer than 40 lines. (SlevomatCodingStandard.Functions.FunctionLength)
 ### Exclusions
 - Aligning assignment statements (Generic.Formatting.MultipleStatementAlignment)
 - Force space after `!` (Generic.Formatting.SpaceAfterNot)
