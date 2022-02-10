@@ -54,6 +54,9 @@ Code MUST follow all rules outlined in [PSR-12](https://www.php-fig.org/psr/psr-
 - Doc comment alignment. (Squiz.Commenting.DocCommentAlignment)
 - Function phpDoc parameter alignment. (Squiz.Commenting.FunctionComment.SpacingAfterParamType) 
 
+# Doctrine Coding Standard
+Below are all the rules applied by the Doctrine coding standard, and the severity assigned to them as part of the CarePlanner Coding Standard. This is to aid adoption of this coding standard across the CarePlanner repositories, by assigning rules to a higher severity depending on how easy they are to fix.
+
 ## Severity 5 (default)
 - `else if` is not allowed, `elseif` must be used instead. (PSR2.ConstrolStructures.ElseIfDeclaration.NotAllowed)
 - Multi-line arrays must have a comma after the last element. (SlevomatCodingStandard.Arrays.TrailingArrayComma)
